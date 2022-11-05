@@ -1,0 +1,74 @@
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+.container{
+    border-radius: 15px;
+    width: 37vw;
+    height: 58vh;
+    margin: 10% auto;
+    box-shadow: 1px 1px 25px rgba(128, 128, 128, 0.74);
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 30% 30% 15% 15%;
+    grid-template-areas: 
+    "img cat"
+    "img tit"
+    "img des"
+    "img auto"
+    "img btn";
+}
+
+.img{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    grid-area: img;
+    position: relative;
+}img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.categoria{
+    border-top-right-radius: 15px;
+    grid-area: cat;
+}
+
+.title{
+    grid-area: tit;
+}
+
+.descricao{
+    grid-area: des;
+}
+
+.btn{
+    border-bottom-right-radius: 15px;
+    grid-area: btn;
+}
+
+
+.grid_precos{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "preco velho"
+    "preco velho"
+}
+
+.preco{
+    grid-area: preco;
+}
+
+.precoVelho{
+    grid-area: velho;
+}
